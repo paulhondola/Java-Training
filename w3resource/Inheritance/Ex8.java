@@ -4,35 +4,35 @@ import java.lang.Math;
 
 abstract class Shape {
 
-	double area;
-	double perimeter;
+    double area;
+    double perimeter;
 
-	double getPerimeter() {
-		return perimeter;
-	}
+    double getPerimeter() {
+        return perimeter;
+    }
 
-	double getArea() {
-		return area;
-	}
+    double getArea() {
+        return area;
+    }
 }
 
 class Circle extends Shape {
 
-	double radius;
+    double radius;
 
-	Circle(double radius) {
-		this.radius = radius;
-		area = Math.PI * radius * radius;
-		perimeter = 2 * Math.PI * radius;
-	}
+    Circle(double radius) {
+        this.radius = radius;
+        area = Math.PI * radius * radius;
+        perimeter = 2 * Math.PI * radius;
+    }
 }
 
-class Ex9 {
+class Ex8 {
 
-	public static void main(String args[]) {
-		Circle circle = new Circle(5);
+    public static void main(String args[]) {
+        Circle circle = new Circle(5);
 
-		System.out.println("Area: " + circle.getArea());
-		System.out.println("Perimeter: " + circle.getPerimeter());
-	}
+        System.out.println("Area: " + circle.getArea());
+        System.out.println("Perimeter: " + circle.getPerimeter());
+    }
 }
